@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  div > .orange 는 직계부모자식관계
+            div .orange 는 후손중에서.. */
+        div .orange {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>메롱메롱</h1>
+    <!-- emmet 문법: 서택자 기반 -->
+    <!-- div>ul>li*3 -->
+    <div>
+        <h1>메롱메롱</h1>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <!--li#orange+tab-->
+            <li class="orange">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <!--span.orange+tab-->
+        <span class="orange">오렌지</span>
+    </div>
+
+</body>
+
+</html>
