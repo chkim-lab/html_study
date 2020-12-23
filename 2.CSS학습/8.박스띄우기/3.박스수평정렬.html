@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class^="container"] {
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+
+            /* overflow: hidden; */
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            font-size: 50px;
+            float: left;
+        }
+
+        /* 방법1
+            .clear-box {
+            clear: both;
+        } */
+        /* 방법3 float 해제는 블록속성만 가능 content: "" 필수*/
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="clear-box"></div> -->
+    </div>
+    <div class="container2 clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="clear-box"></div> -->
+    </div>
+    <div class="container3 clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="clear-box"></div> -->
+    </div>
+
+</body>
+
+</html>
