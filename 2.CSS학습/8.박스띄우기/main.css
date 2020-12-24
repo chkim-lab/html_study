@@ -1,0 +1,22 @@
+header h1{
+    background: orange;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+header h1 span{
+    background: orange;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+header p{
+    font-size: 10px;
+    text-align: center;
+    background: lightgray;
+}
+.title{
+    font-size: 15px;
+    background: red;
+    padding: 4px;
+}
